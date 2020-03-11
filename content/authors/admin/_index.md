@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: PHD of BioPhysics
+role: PhD in BioPhysics
 
 # Organizations/Affiliations
 organizations:
@@ -18,12 +18,13 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests in maching leanring, biomolecule configuration and molecular dynamics
 
 interests:
 - Protein Folding
 - Machine Learning
 - Physics
+- Computer
 
 education:
   courses:
@@ -41,13 +42,13 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
+  link: "mailto:zhanghaomiao@hust.edu.cn"  # For a direct email link, use "mailto:test@example.org".
+- icon: weixin
   icon_pack: fab
   link: https://twitter.com/GeorgeCushen
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://scholar.google.com/citations?view_op=list_works&hl=en&user=uhyo6hIAAAAJ
 - icon: github
   icon_pack: fab
   link: https://github.com/zhanghaomiao
@@ -67,6 +68,6 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+  I'm a PhD in biophysics from the Huazhong University of Science and Technoly. By combing the machine learning and molecuar dynamics, my subject focus on the conformation change of protein . For the sampling protein is diffcult, I develop a method which could accerlate the configuraiton sampling and apply it to study the configuration change of RNA or protein by using machine-realted method.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+  In my spare time, I learn a lot about computer, such as the algorithm, operating system and computer network, parallel computing. I'm interested in programming and had developed the software for my projects.

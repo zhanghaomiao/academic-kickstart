@@ -18,25 +18,37 @@ subtitle = ""
   icon = "cuttlefish"
   icon_pack = "fab"
   name = "C/C++"
-  description = "70%"  
+  #description = "70%" 
 
 [[feature]]
   icon = "python"
   icon_pack = "fab"
   name = "Python"
-  description = "80%"
+  description = " "
   
+[[feature]]
+  icon = "linux"
+  icon_pack = "fab"
+  name = "Linux"
+  description = " "
 
 [[feature]]
   icon = "network-wired"
   icon_pack = "fas"
   name = "Machine Learning"
-  description = "70%"
+  description = " "
+
+[[feature]]
+  icon = "square-root-alt"
+  icon_pack = "fas"
+  name = "Math"
+  description = " "
+
   
 [[feature]]
-  icon = "camera-retro"
+  icon = "atom"
   icon_pack = "fas"
-  name = "Photography"
-  description = "40%"
+  name = "Physics"
+  description = " "
 
 +++

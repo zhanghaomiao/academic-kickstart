@@ -4,34 +4,68 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
-  name = "Home"
-  url = "#about"
-  weight = 10
-
-[[main]]
   name = "Posts"
   url = "post/"
   weight = 1
 
 [[main]]
-  name = "Projects"
-  url = "#projects"
-  weight = 30
+    # identifier = "course"
+    name = "Courses"
+    url = "courses/"
+    weight=3
 
 [[main]]
-  name = "Publications"
-  url = "#featured"
-  weight = 40
+    # identifier = "course"
+    name = "All Courses"
+    url = "courses/"
+    parent = "Courses"
+    weight=3
 
 [[main]]
-  name = "Contact"
-  url = "#contact"
-  weight = 60
+    name = "Operating system"
+    url = "courses/operating_system"
+    parent = "Courses"
+    weight=3
 
 [[main]]
-    name = "Tags"
-    url = "tag/"
-    weight=2
+    name = "Computer network"
+    url = "courses/computer_network"
+    parent = "Courses"
+    weight=4
+
+# [[main]]
+#     name = "Tags"
+#     url = "tag/"
+#     weight=5
+
+
+[[main]]
+  name = "Home"
+  url = "#about"
+  identifier = "home"
+  weight = 10
+
+
+# [[main]]
+  # parent = "home"
+  # name = "Projects"
+  # url = "#projects"
+  # weight = 30
+
+
+# [[main]]
+  # parent = "home"
+  # name = "Publications"
+  # url = "#featured"
+  # weight = 40
+
+
+# [[main]]
+  # parent = "home"
+  # name = "Contact"
+  # url = "#contact"
+  # weight = 60
+
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
