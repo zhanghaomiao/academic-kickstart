@@ -19,7 +19,7 @@
     name = "All Courses"
     url = "courses/"
     parent = "Courses"
-    weight=3
+    weight=1
 
 [[main]]
     name = "Operating system"
@@ -32,6 +32,12 @@
     url = "courses/computer_network"
     parent = "Courses"
     weight=4
+
+[[main]]
+    name = "Deep Learning"
+    url = "courses/deep_learning"
+    parent = "Courses"
+    weight=2
 
 # [[main]]
 #     name = "Tags"

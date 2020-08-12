@@ -45,7 +45,7 @@ social:
   link: "mailto:zhanghaomiao@hust.edu.cn"  # For a direct email link, use "mailto:test@example.org".
 - icon: weixin
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  # link: https://twitter.com/GeorgeCushen
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?view_op=list_works&hl=en&user=uhyo6hIAAAAJ
