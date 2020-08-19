@@ -32,20 +32,14 @@ summary: 一种降维方法，将高维数据映射到低维空间，用于可�
 ### SNE method (Stochastic Neighbor Embedding)
 
 1. High Dimension Space
-    {{<formula>}}
     $$p_{j | i}=\frac{\exp \left(-\left\|x_{i}-x_{j}\right\|^{2} / 2 \sigma_{i}^{2}\right)}{\sum_{k \neq i} \exp \left(-\left\|x_{i}-x_{k}\right\|^{2} / 2 \sigma_{i}^{2}\right)}$$
-    {{</formula>}}
 
 2. Low dimension space
 
-    {{<formula>}}
     $$q_{j | i}=\frac{\exp \left(-\left\|y_{i}-y_{j}\right\|^{2}\right)}{\sum_{k \neq i} \exp \left(-\left\|y_{i}-y_{k}\right\|^{2}\right)}$$
-    {{</formula>}}
 
 3. Cost function
-    {{<formula>}}
     $$C=\sum_{i} K L\left(P_{i} \| Q_{i}\right)=\sum_{i} \sum_{j} p_{j | i} \log \frac{p_{j | i}}{q_{j | i}}$$
-    {{</formula>}}
 
 4. How to choose $\sigma$ for different points
 
@@ -61,13 +55,9 @@ summary: 一种降维方法，将高维数据映射到低维空间，用于可�
 1. Symmetric SNE
 
   - Pairwise similarities in the low dimensional map $q_{ij}$
-    {{<formula>}}
     $$q_{i j}=\frac{\exp \left(-\left\|y_{i}-y_{j}\right\|^{2}\right)}{\sum_{k \neq l} \exp \left(-\left\|y_{k}-y_{l}\right\|^{2}\right)}$$
-    {{</formula>}}
   - High dimensional $p_{ij}$
-    {{<formula>}}
     $$P_{ij} = \frac {p_{j|i} + p_{i|j}}{2n}$$
-    {{</formula>}}
 
 2. Crowding problem
   <img src="/img/tsne_01.png"/>
@@ -75,9 +65,7 @@ summary: 一种降维方法，将高维数据映射到低维空间，用于可�
 
 3. Easy to compute the gradient
 
-    {{<formula>}}
     $$\frac{\delta C}{\delta y_{i}}=4 \sum_{j}\left(p_{i j}-q_{i j}\right)\left(y_{i}-y_{j}\right)\left(1+\left\|y_{i}-y_{j}\right\|^{2}\right)^{-1}$$
-    {{</formula>}}
 
 ## Algorithm
 

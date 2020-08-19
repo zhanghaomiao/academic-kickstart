@@ -9,13 +9,16 @@
   weight = 1
 
 [[main]]
-    # identifier = "course"
     name = "Courses"
     url = "courses/"
     weight=3
 
 [[main]]
-    # identifier = "course"
+    name = "Books"
+    url = "books/"
+    weight=3
+
+[[main]]
     name = "All Courses"
     url = "courses/"
     parent = "Courses"
@@ -39,11 +42,6 @@
     parent = "Courses"
     weight=2
 
-# [[main]]
-#     name = "Tags"
-#     url = "tag/"
-#     weight=5
-
 
 [[main]]
   name = "Home"
@@ -51,6 +49,11 @@
   identifier = "home"
   weight = 10
 
+
+# [[main]]
+#     name = "Tags"
+#     url = "tag/"
+#     weight=5
 
 # [[main]]
   # parent = "home"

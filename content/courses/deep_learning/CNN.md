@@ -143,11 +143,10 @@ $$n^{[l]}\_W = \biggl\lfloor \frac{n^{[l-1]}\_W+2p^{[l]}-f^{[l]}}{s^{[l]}}+1   \
   设 Pooling 之前输入的维度为 $n_H \times n_W \times n_c$
   则输出为
 
-  {{<formula>}}
   $$\left\lfloor\frac{n_{H}-f}{s}+1\right\rfloor \times\left\lfloor\frac{n_{W}-f}{s}+1\right\rfloor \times n_{c}$$
-  {{</formula>}}
 
 ## Example
+
   <img src="/img/cnn/CNN-Example.jpg" width="700px" />
   各个层的参数表示为
 

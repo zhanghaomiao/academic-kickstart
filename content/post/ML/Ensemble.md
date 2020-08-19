@@ -20,9 +20,7 @@ Combine multiple base-learners to imporve applicability across different domains
 
 - Average
   - Simple averaging
-  {{<formula>}}
     $$H(X) = \frac1T \sum_{i=1}^{T} h_i(x)$$
-  {{</formula>}}
   - Weighted averaging
     $$H(x) = \sum_{i=1}^{T} \omega_i h_i(x)$$
 
@@ -30,19 +28,13 @@ Combine multiple base-learners to imporve applicability across different domains
   - learner $h_i$ predicte a label from the collection of class $\{c_1, c_2, \dots, c_N\}$. The learner $h_i$ generate a vector $(h_i^1(x); h_i^2(x); \dots; h_i^N(x))$ from the sample $x$.
   - Marority voting
 
-  {{<formula>}}
   $$H(\boldsymbol{x})=\left\{\begin{array}{ll}{c_{j},} & {\text { if } \sum_{i=1}^{T} h_{i}^{j}(\boldsymbol{x})>0.5 \sum_{k=1}^{N} \sum_{i=1}^{T} h_{i}^{k}(\boldsymbol{x})} \\ {\text { reject, }} & {\text { otherwise. }}\end{array}\right.$$
-  {{</formula>}}
 
   可以拒绝， 即保证要提供可靠的结果
   - Plurality voting (预测为票数最多的标记)
-    {{<formula>}}
     $$H(\boldsymbol{x})=c_{\arg \max_j  \sum_{i=1}^{T} h_{i}^{j}(\boldsymbol{x})}$$
-    {{</formula>}}
   - Weighted Voting (加权平均)
-    {{<formula>}}
       $$H(\boldsymbol{x})=c_{\arg \max_j  \sum_{i=1}^{T} \omega_i h_{i}^{j}(\boldsymbol{x})}$$
-    {{</formula>}}
 
 - 学习法(stacking)
    Stacking 从初始数据集训练出初级学习器， 然后生成一个新数据集用于训练次级学习器。 在新数据集中， 初级学习器的输出被当做样例输入特征， 而初始样本的标记被当做样例标记
@@ -107,7 +99,5 @@ Combine multiple base-learners to imporve applicability across different domains
   - AdaBoost **increases margin** (Same as SVM)
     - A large margin imporves generalizability
     - Define margin of prediction of an example $(x^{(i)}, y^{(i)}) \in X$ as:
-    {{<formula>}}
       $$margin(x^{(i)}, y^{(i)}) = y^{(i)}f(x^{(i)}) = \sum_{j:y^{(i)} = d^{(j)}(x^{(i)})} \alpha_j - \sum_{j:y^{(i)} \neq d^{(j)}(x^{(i)})} \alpha_j$$
-    {{</formula>}}
     <img src="/img/ensem_06.png" width="600px"/>
